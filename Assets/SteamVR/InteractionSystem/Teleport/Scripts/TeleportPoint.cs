@@ -42,8 +42,8 @@ namespace Valve.VR.InteractionSystem
 		private Text titleText;
 		private Player player;
 		private Vector3 lookAtPosition = Vector3.zero;
-		private int tintColorID = 0;
-		private Color tintColor = Color.clear;
+		private int ColorID = 0;
+		private Color color = Color.clear;
 		private Color titleColor = Color.clear;
 		private float fullTitleAlpha = 0.0f;
 
@@ -70,7 +70,7 @@ namespace Valve.VR.InteractionSystem
 
 			animation = GetComponent<Animation>();
 
-			tintColorID = Shader.PropertyToID( "_TintColor" );
+			ColorID = Shader.PropertyToID( "_TintColor" );
 
 			moveLocationIcon.gameObject.SetActive( false );
 			switchSceneIcon.gameObject.SetActive( false );
@@ -189,13 +189,13 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		public override void SetAlpha( float tintAlpha, float alphaPercent )
 		{
-			tintColor = markerMesh.material.GetColor( tintColorID );
-			tintColor.a = tintAlpha;
+			color = markerMesh.material.GetColor( ColorID );
+			color.a = tintAlpha;
 
-			markerMesh.material.SetColor( tintColorID, tintColor );
-			switchSceneIcon.material.SetColor( tintColorID, tintColor );
-			moveLocationIcon.material.SetColor( tintColorID, tintColor );
-			lockedIcon.material.SetColor( tintColorID, tintColor );
+			markerMesh.material.SetColor( ColorID, color );
+			switchSceneIcon.material.SetColor( ColorID, color );
+			moveLocationIcon.material.SetColor( ColorID, color );
+			lockedIcon.material.SetColor( ColorID, color );
 
 			titleColor.a = fullTitleAlpha * alphaPercent;
 			titleText.color = titleColor;

@@ -147,7 +147,7 @@ namespace Valve.VR.InteractionSystem
 			pointerLineRenderer = GetComponentInChildren<LineRenderer>();
 			teleportPointerObject = pointerLineRenderer.gameObject;
 
-			int tintColorID = Shader.PropertyToID( "_TintColor" );
+			int tintColorID = Shader.PropertyToID( "_Color" );
 			fullTintAlpha = pointVisibleMaterial.GetColor( tintColorID ).a;
 
 			teleportArc = GetComponent<TeleportArc>();
