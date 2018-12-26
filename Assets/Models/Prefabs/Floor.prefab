@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4404397073261652}
   - component: {fileID: 33403571415621242}
   - component: {fileID: 23527126387578076}
+  - component: {fileID: 65419937478392036}
   m_Layer: 0
   m_Name: floor
   m_TagString: Untagged
@@ -82,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1745390154025566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4572, y: -0.00000005401671, z: 0}
+  m_LocalPosition: {x: 1.3716, y: -0.00000010832, z: -0.4572}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4404397073261652}
@@ -97,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1658932494292932}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0056, z: -0}
   m_LocalScale: {x: 1, y: 1.0000005, z: 0.46551272}
   m_Children: []
   m_Father: {fileID: 4416002885838002}
@@ -187,6 +188,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1658932494292932}
   m_Mesh: {fileID: 4300000, guid: b3bbd7036401df24991e76c1b310abd1, type: 3}
+--- !u!65 &65419937478392036
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1108021332723472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4572, y: 0.4572001, z: 0.025400009}
+  m_Center: {x: 0, y: 0, z: 0.0127000045}
 --- !u!65 &65712724502875346
 BoxCollider:
   m_ObjectHideFlags: 1
